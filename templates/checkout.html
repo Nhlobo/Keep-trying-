@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+</head>
+<body>
+    <h2>Checkout</h2>
+    <form method="POST" action="/pay">
+        <label>Item:</label>
+        <input type="text" name="item" required>
+        <label>Amount:</label>
+        <input type="text" name="amount" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <button type="submit">Pay</button>
+    </form>
+</body>
+</html>

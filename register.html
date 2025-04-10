@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <p style="color: {{ 'green' if category == 'success' else 'red' }}">{{ message }}</p>
+        {% endfor %}
+    {% endwith %}
+    <form method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
